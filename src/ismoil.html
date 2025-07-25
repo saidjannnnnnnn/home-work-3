@@ -9,10 +9,10 @@
 </head>
 
 <body>
-    <header class="max-w-[1200px] m-auto flex py-3 items-center justify-between">
+    <header class="max-w-[1200px] m-auto flex py-3 items-center justify-between lg:px-0 px-4">
         <h1 class="text-[28px] font-extrabold">Англ|</h1>
         <div class="flex gap-[50px] items-center">
-            <nav>
+            <nav class="hidden lg:block">
                 <ul class="flex gap-4">
                     <li>О компании</li>
                     <li>Новости</li>
@@ -28,8 +28,9 @@
         </div>
     </header>
 
-    <div class="w-full h-[698px] gap-[50px]" style="background-image: url(./img-is/01.png); background-size: cover; background-repeat: no-repeat; background-position-x: center;">
-        <div class="flex items-center justify-between max-w-[1200px] m-auto pt-[90px]">
+    <div class="w-full lg:h-[698px] h-[900px] gap-[50px]"
+        style="background-image: url(./img-is/01.png); background-size: cover; background-repeat: no-repeat; background-position-x: center;">
+        <div class="flex items-center justify-between max-w-[1200px] m-auto pt-[90px] lg:flex-row flex-col">
             <div class="text-white">
                 <h1 class="text-[54px] font-bold ">Курсы <br> английского <br> языка</h1>
                 <p class="text-[24px] ">Станьте сильнее и увереннее всего за <br> 7 дней прохождения курса онлайн</p>
@@ -43,7 +44,7 @@
                     <button class="py-[17px] bg-[#FF002E] rounded-xl text-white" type="submit">Оставить заявку</button>
                 </form>
                 <div class="mt-5">
-                   + Скидка 20% на покупку любого курса
+                    + Скидка 20% на покупку любого курса
                 </div>
             </div>
         </div>
@@ -60,10 +61,10 @@
 
     <img class="w-full py-[50px]" src="/src/img-is/05.png" alt="">
 
-    <section class="flex flex-col items-center gap-5 py-[50px]">
+    <section class="flex flex-col items-center gap-5 py-[50px] ">
         <h1 class="text-[64px] font-extrabold">Наши учителя</h1>
         <p class="text-[24px]">Подберём подходящего педагога для каждого ученика</p>
-        <div class="flex gap-[30px] justify-between">
+        <div class="flex gap-[30px] justify-between ">
             <div class="flex flex-col items-center gap-2">
                 <img src="/src/img-is/Ellipse 11.jpg" alt="">
                 <h1 class="text-[24px]">Имя Фамилия</h1>
@@ -74,18 +75,99 @@
                 <h1 class="text-[24px]">Имя Фамилия</h1>
                 <h2 class="text-[18px]">Магистр филологии</h2>
             </div>
-           <div class="flex flex-col items-center gap-2">
+            <div class="flex flex-col items-center gap-2">
                 <img src="/src/img-is/13.png" alt="">
                 <h1 class="text-[24px]">Имя Фамилия</h1>
                 <h2 class="text-[18px]">Лингвист переводчик</h2>
             </div>
-           <div class="flex flex-col items-center gap-2">
+            <div class="flex flex-col items-center gap-2">
                 <img src="/src/img-is/11.png" alt="">
                 <h1 class="text-[24px]">Имя Фамилия</h1>
                 <h2 class="text-[18px]">Магистр иностранной филологии</h2>
             </div>
         </div>
     </section>
+
+    <section class="flex flex-col items-center gap-[50px] py-[50px]">
+        <h1 class="text-[54px] font-extrabold">Сертификаты</h1>
+        <div class="flex gap-[30px] justify-between">
+            <img src="/src/img-is/1ba1973130d549ce1c5c12914518980ebfa24acd.png" alt="">
+            <img src="/src/img-is/e47d89d1f74123ddd385a43627e37d036dca78b3.png" alt="">
+            <img src="/src/img-is/1ba1973130d549ce1c5c12914518980ebfa24acd.png" alt="">
+            <img src="/src/img-is/e47d89d1f74123ddd385a43627e37d036dca78b3.png" alt="">
+        </div>
+    </section>
+
+    <div class="w-full h-[800px] py-10 pb-[20px]"
+        style="background-image: url(/src/img-is/56da43e27e06e8ebaed9791e01d8a39c5b112fbc.jpg); background-size: cover; background-repeat: no-repeat; background-position-x: center;">
+        <div class="flex justify-center h-[680px] items-center">
+            <div class="w-[540px] p-7 rounded-xl  flex flex-col items-center text-white text-center">
+                <h2 class="pb-3  text-[48px] font-bold">Запишитесь на бесплатный урок</h2>
+                <h2 class="pb-3  text-[18px] font-bold">Заполните форму ниже для прохождения 1-го бесплатного урока.
+                    Администратор свяжется с вами для согласования времени.</h2>
+                <form class="flex flex-col gap-3 w-full text-[18px] ">
+                    <input class="border-2 py-[15px] px-[10px] rounded-xl" type="text" placeholder="Ваше имя">
+                    <input class="border-2 py-[15px] px-[10px] rounded-xl" type="tel" placeholder="Ваш телефон">
+                    <input class="border-2 py-[15px] px-[10px] rounded-xl" type="email" placeholder="Электронная почта">
+                    <button class="py-[17px] bg-[#FF002E] rounded-xl text-white" type="submit">Оставить заявку</button>
+                </form>
+                <div class="mt-5">
+                    Оставляя заявку, вы соглашаетесь на обработку персональных данных условиями бронирования счёта
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="py-[70px] flex justify-around w-full items-center">
+        <img src="/src/img-is/LeftArrow.png" alt="">
+        <div class="flex flex-col items-center text-center w-[40%] gap-[18px]">
+            <img src="/src/img-is/Ellipse 1.png" alt="">
+            <h1 class="text-[24px] font-bold">Работа с сервисом приносит радость, потому что высочайший профессионализм,
+                удобство, оперативность, и просто приятные люди!</h1>
+            <h2 class="text-[18px]">Александра Селезнева</h2>
+        </div>
+        <img src="/src/img-is/RightArrow.png" alt="">
+    </section>
+
+    <section class="flex justify-center py-[40px]">
+        <img src="/src/img-is/Frame 43.png" alt="">
+    </section>
+
+    <div class="w-full h-[800px] py-10 pb-[20px]"
+        style="background-image: url(/src/img-is/012.png); background-size: cover; background-repeat: no-repeat; background-position-x: center;">
+        <div class="flex justify-center h-[800px] items-center">
+            <div class="w-[730px] py-7 rounded-xl  flex flex-col items-center text-white text-center">
+                <h2 class="pb-3  text-[48px] font-bold">Курсы английского языка онлайн</h2>
+                <h2 class="pb-3  text-[18px] font-bold text-center">Ваш надежный помощник в покорении английской лексики и
+                    грамматики! Если Вы уже давно и долго пытаетесь справиться с английским, но Ваши попытки так и не
+                    увенчались успехом – тогда наши курсы ангдийского языка онлайн именно то, что <br> Вам нужно! <br>
+                    Если Вы современный молодой человек или девушка, ученик школы, студент университета, домохозяйка или
+                    бизнесмен – то Вы безусловно знаете, как важна каждая минута и стараетесь экономить свое время. Наша
+                    школа придет в этом Вам на помощь! Курсы английского языка онлайн эффективные в любое время в любом
+                    месте. Вы можете заниматься дома, на работе, в командировке или отпуске. Вам нужно всего лишь
+                    интернет и устройство: компьютер, планшет или даже телефон. <br> <br>
+                    Весь учебный материал у нас электронный, который можно загрузить хоть на все устройства, а при
+                    желании еще и распечатать.</h2>
+
+                <div class="mt-5">
+                    <button class="py-[17px] px-[5px] bg-[#FF002E] rounded-xl text-white">Подробнее</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex flex-col gap-[40px] items-center py-[40px]">
+        <img src="/src/img-is/Light.png" alt="">
+        <nav>
+                <ul class="flex gap-4">
+                    <li>О компании</li>
+                    <li>Новости</li>
+                    <li>Помощь</li>
+                    <li>Контакты</li>
+                </ul>
+            </nav>
+            <p>© 2020 Английский язык</p>
+    </div>
 </body>
 
 </html>
